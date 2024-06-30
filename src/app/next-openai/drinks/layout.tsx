@@ -1,7 +1,7 @@
 import OpenAINavBar from "@/components/openai/OpenAINavBar/OpenAINavBar";
 import React from "react";
 
-export const DrinkLayout = ({ children }: any) => {
+const DrinkLayout = ({ children }: any) => {
   return (
     <div>
       <OpenAINavBar />
