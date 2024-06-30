@@ -1,6 +1,6 @@
 import Card, { CardContent, CardProps } from "@/components/Card";
 import PageTitle from "@/components/PageTitle";
-import SalesCard from "@/components/SalesCard";
+import SalesCard, { SalesProps } from "@/components/SalesCard";
 import { DollarSign, Users, CreditCard, Activity } from "lucide-react";
 import BarChart from "@/components/BarChart";
 
