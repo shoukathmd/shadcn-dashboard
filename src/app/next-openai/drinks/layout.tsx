@@ -1,7 +1,11 @@
 import OpenAINavBar from "@/components/openai/OpenAINavBar/OpenAINavBar";
-import React from "react";
+import React, { ReactNode } from "react";
 
-const DrinkLayout = ({ children }: any) => {
+type Props = {
+  children: ReactNode;
+};
+
+const Layout = ({ children }: Props) => {
   return (
     <div>
       <OpenAINavBar />
@@ -17,4 +21,4 @@ const DrinkLayout = ({ children }: any) => {
   );
 };
 
-export default DrinkLayout;
+export default Layout;
