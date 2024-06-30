@@ -1,6 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
-const DrinksList = ({ drinks }) => {
+import React from "react";
+
+interface Drink {
+  idDrink: string;
+  strDrink: string;
+  strDrinkThumb: string;
+}
+
+interface DrinksListProps {
+  drinks: Drink[];
+}
+
+const DrinksList: React.FC<DrinksListProps> = ({ drinks }) => {
   return (
     <ul className="grid sm:grid-cols-2 gap-6 mt-6">
       {drinks.map((drink) => {
@@ -27,4 +39,5 @@ const DrinksList = ({ drinks }) => {
     </ul>
   );
 };
+
 export default DrinksList;
