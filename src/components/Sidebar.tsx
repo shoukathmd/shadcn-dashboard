@@ -6,6 +6,7 @@ import {
   Settings2,
   ShoppingCart,
   UsersRound,
+  Warehouse,
 } from "lucide-react";
 import { Button } from "./ui/button";
 import { useWindowWidth } from "@react-hook/window-size";
@@ -20,7 +21,7 @@ function Sidebar() {
     setIsCollapsed(!isCollapsed);
   }
   return (
-    <div className="relative min-w-[80px] border-r px-3 pb-10 pt-24">
+    <div className="relative min-w-[120px] border-r px-3 pb-10 pt-24">
       {!mobileWidth && (
         <div className="absolute right-[-20px] top-7">
           <Button
@@ -58,6 +59,12 @@ function Sidebar() {
             icon: Settings2,
             variant: "ghost",
             href: "/settings",
+          },
+          {
+            title: "OpenAI",
+            icon: Warehouse,
+            variant: "ghost",
+            href: "/next-openai",
           },
         ]}
       />
