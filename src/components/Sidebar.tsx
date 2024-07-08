@@ -54,18 +54,18 @@ function Sidebar() {
             variant: "ghost",
             href: "/orders",
           },
-          {
-            title: "Settings",
-            icon: Settings2,
-            variant: "ghost",
-            href: "/settings",
-          },
-          {
-            title: "OpenAI",
-            icon: Warehouse,
-            variant: "ghost",
-            href: "/next-openai",
-          },
+          // {
+          //   title: "Settings",
+          //   icon: Settings2,
+          //   variant: "ghost",
+          //   href: "/settings",
+          // },
+          // {
+          //   title: "OpenAI",
+          //   icon: Warehouse,
+          //   variant: "ghost",
+          //   href: "/next-openai",
+          // },
         ]}
       />
     </div>
